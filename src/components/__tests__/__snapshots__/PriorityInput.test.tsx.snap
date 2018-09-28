@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PriorityInput PriorityInput should render 1`] = `
+<div
+  className="c-priorityInput"
+>
+  <button
+    className="c-priorityInput__btn c-priorityInput__btn--up"
+    disabled={false}
+    onClick={[Function]}
+  >
+    <i
+      className="c-priorityInput__icon icon-less"
+    />
+  </button>
+  <div
+    className="c-priorityInput__display"
+  >
+    medium
+  </div>
+  <button
+    className="c-priorityInput__btn c-priorityInput__btn--down"
+    disabled={false}
+    onClick={[Function]}
+  >
+    <i
+      className="c-priorityInput__icon icon-more"
+    />
+  </button>
+</div>
+`;

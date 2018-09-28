@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToDoDueDatePicker should render 1`] = `
+<div
+  className="c-toDoDueDatePicker"
+>
+  <div>
+    <div
+      className="react-datepicker-wrapper"
+    >
+      <div
+        className="react-datepicker__input-container"
+      >
+        <input
+          className="c-toDoDueDatePicker__input"
+          disabled={false}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          readOnly={false}
+          type="text"
+          value="09/28/2018"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

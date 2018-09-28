@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToDoSort ToDoSort should render 1`] = `
+<div
+  className="c-toDoSort"
+>
+  <div
+    className="c-toDoSort__label"
+  >
+    Sort By
+  </div>
+  <button
+    className="c-toDoSort__btn"
+    onClick={[Function]}
+  >
+    Name
+  </button>
+  <button
+    className="c-toDoSort__btn"
+    onClick={[Function]}
+  >
+    Due Date
+  </button>
+  <button
+    className="c-toDoSort__btn"
+    onClick={[Function]}
+  >
+    Priority
+  </button>
+</div>
+`;

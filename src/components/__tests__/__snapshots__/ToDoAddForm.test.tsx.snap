@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToDoAddForm should render 1`] = `
+<div
+  className="c-toDoAddForm"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="c-toDoAddForm__input"
+      maxLength={300}
+      onChange={[Function]}
+      placeholder="Enter Todo Name and press Enter"
+      type="text"
+      value=""
+    />
+  </form>
+</div>
+`;

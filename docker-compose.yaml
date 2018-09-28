@@ -1,0 +1,20 @@
+web:
+  build: .
+  ports:
+    - “3000:3000”
+  volumes:
+    - .:/project/:rw
+  environment:
+    - NODE_ENV=development
+  # Before you run this file for the first time, make sure
+  # you remove node_modules/ folders in your host machine
+  command: >
+    sh -c '
+    if test -d node_modules;
+    then
+      echo node_modules_exists ;
+    else
+      cp -a /tmp/node_modules /usr/src/app/;
+    fi &&
+    npm install && npm run watch
+    '

@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToDoAppContainer should render 1`] = `
+<div
+  className="c-toDoApp"
+>
+  <h1
+    className="c-toDoApp__header"
+  >
+    Todo list
+  </h1>
+  <div
+    className="c-toDoApp__form c-toDoAddForm"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        className="c-toDoAddForm__input"
+        maxLength={300}
+        onChange={[Function]}
+        placeholder="Enter Todo Name and press Enter"
+        type="text"
+        value=""
+      />
+    </form>
+  </div>
+  <div
+    className="c-toDoSort"
+  >
+    <div
+      className="c-toDoSort__label"
+    >
+      Sort By
+    </div>
+    <button
+      className="c-toDoSort__btn"
+      onClick={[Function]}
+    >
+      Name
+    </button>
+    <button
+      className="c-toDoSort__btn"
+      onClick={[Function]}
+    >
+      Due Date
+    </button>
+    <button
+      className="c-toDoSort__btn"
+      onClick={[Function]}
+    >
+      Priority
+    </button>
+  </div>
+  <ul
+    className="c-toDoList"
+  >
+    <li
+      className="c-toDoList__item c-toDo"
+    >
+      <div
+        className="c-toDo__done"
+      >
+        <label
+          className="c-coolCheckBox"
+        >
+          <input
+            checked={false}
+            className="c-coolCheckBox__input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <i
+            className="c-coolCheckBox__check icon-done"
+          />
+        </label>
+      </div>
+      <div
+        className="c-toDo__title"
+      >
+        Todo 2
+      </div>
+      <div
+        className="c-toDo__dueDate c-toDoDueDatePicker"
+      >
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
+            <div
+              className="react-datepicker__input-container"
+            >
+              <input
+                className="c-toDoDueDatePicker__input"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                readOnly={false}
+                type="text"
+                value="09/27/2018"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="c-toDo__priority c-priorityInput"
+      >
+        <button
+          className="c-priorityInput__btn c-priorityInput__btn--up"
+          disabled={false}
+          onClick={[Function]}
+        >
+          <i
+            className="c-priorityInput__icon icon-less"
+          />
+        </button>
+        <div
+          className="c-priorityInput__display"
+        >
+          medium
+        </div>
+        <button
+          className="c-priorityInput__btn c-priorityInput__btn--down"
+          disabled={false}
+          onClick={[Function]}
+        >
+          <i
+            className="c-priorityInput__icon icon-more"
+          />
+        </button>
+      </div>
+      <div
+        className="c-toDo__remove"
+      >
+        <button
+          className="c-toDo__removeBtn"
+          onClick={[Function]}
+        >
+          <i
+            className="c-toDo__removeIcon icon-close"
+          />
+        </button>
+      </div>
+    </li>
+    <li
+      className="c-toDoList__item c-toDo"
+    >
+      <div
+        className="c-toDo__done"
+      >
+        <label
+          className="c-coolCheckBox"
+        >
+          <input
+            checked={false}
+            className="c-coolCheckBox__input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <i
+            className="c-coolCheckBox__check icon-done"
+          />
+        </label>
+      </div>
+      <div
+        className="c-toDo__title"
+      >
+        Todo 1
+      </div>
+      <div
+        className="c-toDo__dueDate c-toDoDueDatePicker"
+      >
+        <div>
+          <div
+            className="react-datepicker-wrapper"
+          >
+            <div
+              className="react-datepicker__input-container"
+            >
+              <input
+                className="c-toDoDueDatePicker__input"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                readOnly={false}
+                type="text"
+                value="09/27/2018"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="c-toDo__priority c-priorityInput"
+      >
+        <button
+          className="c-priorityInput__btn c-priorityInput__btn--up"
+          disabled={true}
+          onClick={[Function]}
+        >
+          <i
+            className="c-priorityInput__icon icon-less"
+          />
+        </button>
+        <div
+          className="c-priorityInput__display"
+        >
+          high
+        </div>
+        <button
+          className="c-priorityInput__btn c-priorityInput__btn--down"
+          disabled={false}
+          onClick={[Function]}
+        >
+          <i
+            className="c-priorityInput__icon icon-more"
+          />
+        </button>
+      </div>
+      <div
+        className="c-toDo__remove"
+      >
+        <button
+          className="c-toDo__removeBtn"
+          onClick={[Function]}
+        >
+          <i
+            className="c-toDo__removeIcon icon-close"
+          />
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

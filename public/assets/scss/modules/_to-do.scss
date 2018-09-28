@@ -1,0 +1,58 @@
+.c-toDo:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.c-toDo__done {
+  float: left;
+  width: 60px;
+  padding-top: (70px - 24px) / 2;
+  position: relative;
+  z-index: 1;
+}
+
+.c-toDo__title {
+  float: left;
+  width: 100%;
+  padding: ((70px - 20px) / 2) (70px + 120px + 21px) 0 60px;
+  margin: 0 (-1*(70px + 120px + 21px)) 0 -60px;
+  font-size: 18px;
+}
+
+.c-toDo__priority {
+  float: left;
+  width: 70px;
+  padding: 1px 0;
+}
+
+.c-toDo__dueDate {
+  float: left;
+  width: 120px;
+  overflow: hidden;
+  padding: ((70px - 38px) / 2) 0;
+}
+
+.c-toDo__remove {
+  float: left;
+  width: 16px + 5px;
+  padding: ((70px - 16px) / 2) 0;
+}
+
+.c-toDo__removeBtn {
+  background: transparent;
+  color: #ff9999;
+  font-size: 16px;
+  line-height: 0;
+  padding: 0;
+  border: none;
+  &:hover,
+  &:active,
+  &:focus {
+    color: #ff0000;
+  }
+}
+
+.c-toDo__removeIcon {
+  line-height: 1;
+}

@@ -1,0 +1,40 @@
+.c-coolCheckBox {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  &:before {
+    content: '';
+    display: block;
+    border: solid 1px #eeeeee;
+    border-radius: 100px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.c-coolCheckBox__input {
+  visibility: hidden;
+  &:focus {
+    outline: none;
+  }
+}
+
+.c-coolCheckBox__input:checked + .c-coolCheckBox__check {
+  display: inline-block;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.c-coolCheckBox__check {
+  transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
+  transform: scale(0);
+  opacity: 0;
+  font-size: 32px;
+  font-weight: 500;
+  padding: 0px;
+  position: absolute;
+  top: -5px;
+  left: 0;
+}

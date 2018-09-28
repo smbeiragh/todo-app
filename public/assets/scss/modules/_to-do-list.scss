@@ -1,0 +1,13 @@
+.c-toDoList {
+  list-style: none;
+  display: block;
+}
+
+.c-toDoList__item {
+  display: block;
+  border-bottom: solid 1px #eeeeee;
+  padding: 5px 5px;
+  &:last-child {
+    border-bottom: none;
+  }
+}

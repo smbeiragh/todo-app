@@ -1,0 +1,23 @@
+.c-toDoSort {
+  text-align: center;
+  font-size: 14px;
+  color: #505050;
+}
+
+.c-toDoSort__label {
+  display: inline-block;
+}
+
+.c-toDoSort__btn {
+  color: currentColor;
+  margin: 0 10px;
+  background: #fefefe;
+  border: solid 1px #eeeeee;
+  padding: 7px 5px;
+  &.is-active,
+  &:hover,
+  &:active,
+  &:focus {
+    background: #f5f5f5;
+  }
+}

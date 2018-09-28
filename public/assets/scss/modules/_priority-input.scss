@@ -1,0 +1,35 @@
+.c-priorityInput {
+  text-align: center;
+}
+
+.c-priorityInput__btn {
+  background: transparent ;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #d0d0d0;
+  line-height: 0;
+  &:hover,
+  &:active,
+  &:focus {
+    color: #707070;
+  }
+  &[disabled] {
+    opacity: 0.2;
+    &:hover,
+    &:active,
+    &:focus {
+      color: #d0d0d0;
+    }
+  }
+}
+
+.c-priorityInput__icon {
+  line-height: 1;
+  font-size: 24px;
+}
+
+.c-priorityInput__display {
+  font-size: 14px;
+  color: #707070;
+}

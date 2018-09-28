@@ -1,0 +1,89 @@
+{
+  "name": "todo-app-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "sajjad m.beiraghdar <smbeiragh@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "NODE_PORT=3000 NODE_ENV=production node ./index.js",
+    "start:dev": "NODE_PORT=3000 NODE_ENV=development node ./index.js",
+    "watch": "npm run clean && NODE_ENV=development webpack --config=./webpack.config.server.dev.js --watch",
+    "build": "npm run clean && NODE_ENV=production webpack --config=./webpack.config.prod.js",
+    "clean": "rm -rf ./dist ./public/assets/dist",
+    "test": "npm run clean &  NODE_PORT=3000 NODE_ENV=development jest"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/test-shim.js",
+      "<rootDir>/test-setup.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "tsx",
+      "scss",
+      "css"
+    ],
+    "preset": "ts-jest"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.1.14",
+    "@types/jest": "^23.3.2",
+    "@types/react-test-renderer": "^16.0.2",
+    "css-loader": "^1.0.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "jest": "^23.6.0",
+    "mini-css-extract-plugin": "^0.4.3",
+    "node-sass": "^4.9.3",
+    "react-hot-loader": "^4.3.8",
+    "react-test-renderer": "^16.5.2",
+    "sass-loader": "^7.1.0",
+    "source-map-support": "^0.5.9",
+    "style-loader": "^0.23.0",
+    "ts-jest": "^23.10.2",
+    "ts-loader": "^5.2.0",
+    "typescript": "^3.0.3",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.19.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-middleware": "^3.3.0",
+    "webpack-hot-middleware": "^2.24.0",
+    "webpack-manifest-plugin": "^2.0.4",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "@types/node": "^10.11.0",
+    "@types/react": "^16.4.14",
+    "@types/react-dom": "^16.0.7",
+    "@types/classnames": "^2.2.6",
+    "@types/core-js": "^2.5.0",
+    "@types/express": "^4.16.0",
+    "@types/node-fetch": "^2.1.2",
+    "@types/react-datepicker": "^1.1.7",
+    "@types/react-redux": "^6.0.9",
+    "@types/webpack-env": "^1.13.6",
+    "apollo-boost": "^0.1.16",
+    "apollo-client": "^2.3.8",
+    "apollo-server-express": "^2.1.0",
+    "classnames": "^2.2.6",
+    "core-js": "^2.5.7",
+    "express": "^4.16.3",
+    "graphql": "0.13.0",
+    "moment": "^2.22.2",
+    "node-fetch": "^2.2.0",
+    "node-noop": "^1.0.0",
+    "normalize.css": "^8.0.0",
+    "react": "^16.5.1",
+    "react-apollo": "^2.1.11",
+    "react-datepicker": "^1.6.0",
+    "react-dom": "^16.5.1",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
+  }
+}
